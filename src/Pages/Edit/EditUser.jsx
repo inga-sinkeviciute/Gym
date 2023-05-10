@@ -33,6 +33,7 @@ export const EditUser = ({ user, onClose }) => {
 
   return (
     <div className="edit-user-container">
+      <h3>Edit User</h3>
       <form className="edit-user-form" onSubmit={handleSubmit}>
         <label htmlFor="name">Name</label>
         <input
