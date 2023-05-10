@@ -7,4 +7,4 @@ This is a members registration application that helps the administrator of the g
 1. Clone the remote repository to your local machine using the terminal
 2. Change your working directory to the project folder
 3. Install the required node modules using the 'npm ci' command
-4. Finally, run the project using the 'npm run dev' command
+4. Finally, run the project using the 'npm run start' command. This command connects both frontend and backend of the project.
