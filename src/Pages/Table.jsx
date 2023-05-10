@@ -21,6 +21,7 @@ export const Table = ({ users }) => {
 
   return (
     <div className="container">
+      <h1>Members List</h1>
       <table className="Table">
         <thead>
           <tr>
