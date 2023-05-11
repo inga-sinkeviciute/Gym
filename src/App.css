@@ -1,3 +1,5 @@
+/* Shared design for both pages */
+
 body {
   color: white;
   background-image: linear-gradient(79deg, #6168fc, #ff349a 48%, #f8bdda),
@@ -5,15 +7,14 @@ body {
   background-size: cover;
   background-position: center;
   background-blend-mode: multiply;
-  height: 100vh;
-  font-family: "Roboto", sans-serif;
+  min-height: calc(100vh);
 }
 
 .Header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 3.5rem;
+  height: 4rem;
   color: white;
   background-color: #77b5ff;
 }
@@ -32,6 +33,8 @@ ul {
 li {
   margin: 0 1rem;
   padding: 0;
+  font-size: medium;
+  font-weight: bold;
 }
 
 .Header ul li a:hover {
@@ -54,21 +57,43 @@ h3 {
   margin-bottom: 10px;
 }
 
-.auth-form-container {
+.Footer {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 3.5rem;
+  color: white;
+  background-color: #77b5ff;
+}
+
+/* The design for Registration Form page */
+
+.register {
   justify-content: center;
   align-items: center;
   padding: 1rem;
-  margin: auto;
-  width: 90%;
+  margin: 30px auto;
+  width: 80%;
   max-width: 500px;
   background-color: #f8bdda1c;
   border-radius: 10px;
 }
 
 @media screen and (min-width: 600px) {
-  .auth-form-container {
-    padding: 3rem;
-    margin: rem auto;
+  .register {
+    width: 80%;
+    margin: 30px auto;
+  }
+}
+
+@media screen and (min-width: 1220px) {
+  .register {
+    width: 100%;
+    margin: 30px auto;
+    padding-bottom: 2.5rem;
   }
 }
 
@@ -92,7 +117,7 @@ input {
 }
 
 button {
-  width: 450px;
+  width: 400px;
   border: none;
   background-color: white;
   padding: 15px;
@@ -115,7 +140,9 @@ button:hover {
   transform: scale(0.9);
 }
 
-.container {
+/* The design for the Members List page  */
+
+.table-container {
   display: flex;
   flex-direction: column;
   padding: 1rem;
@@ -123,7 +150,7 @@ button:hover {
 }
 
 @media screen and (min-width: 600px) {
-  .container {
+  .table-container {
     max-width: 1000px;
     padding: 3rem;
     margin: 3rem auto;
@@ -195,6 +222,8 @@ tbody {
   transform: scale(0.9);
 }
 
+/* Edit table css */
+
 .edit-user-container {
   position: fixed;
   top: 50%;
@@ -245,22 +274,4 @@ tbody {
   color: #6168fc;
   font-size: small;
   transition: all 0.2s ease-in-out;
-}
-
-.Footer {
-  position: fixed;
-  bottom: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 2.5rem;
-  color: white;
-  background-color: #77b5ff;
-}
-
-@media screen and (min-width: 600px) {
-  .Footer {
-    height: 3.5rem;
-  }
 }

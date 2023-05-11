@@ -20,7 +20,7 @@ export const Table = ({ users }) => {
   };
 
   return (
-    <div className="container">
+    <div className="table-container">
       <h1>Members List</h1>
       <table className="Table">
         <thead>
