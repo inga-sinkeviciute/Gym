@@ -27,6 +27,7 @@ export const Register = (props) => {
         setEmail("");
         setStartDate(new Date().toISOString().slice(0, 10));
         setEndDate("");
+        window.location.reload();
       });
   };
 
